@@ -1,0 +1,19 @@
+{
+  "name": "react-0.13.3",
+  "version": "1.0.0",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "main": "server.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0"
+  }
+}
