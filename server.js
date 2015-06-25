@@ -22,18 +22,18 @@ app.use('/', express.static(path.join(__dirname, './')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/comments.json', function(req, res) {
-  fs.readFile('comments.json', function(err, data) {
+app.get('/public/comments.json', function(req, res) {
+  fs.readFile('./public/comments.json', function(err, data) {
     res.setHeader('Cache-Control', 'no-cache');
     res.json(JSON.parse(data));
   });
 });
 
-app.post('/comments.json', function(req, res) {
-  fs.readFile('comments.json', function(err, data) {
+app.post('/public/comments.json', function(req, res) {
+  fs.readFile('./public/comments.json', function(err, data) {
     var comments = JSON.parse(data);
     comments.push(req.body);
-    fs.writeFile('comments.json', JSON.stringify(comments, null, 4), function(err) {
+    fs.writeFile('./public/comments.json', JSON.stringify(comments, null, 2), function(err) {
       res.setHeader('Cache-Control', 'no-cache');
       res.json(comments);
     });

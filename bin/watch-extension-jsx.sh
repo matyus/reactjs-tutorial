@@ -2,6 +2,7 @@
 
 clear
 
-jsx --extension jsx src/ build/
-
 echo "Watching .jsx files"
+
+jsx --watch --extension jsx src/ build/
+

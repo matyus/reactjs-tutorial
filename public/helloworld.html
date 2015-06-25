@@ -3,10 +3,19 @@
   <head>
     <title>Hello, Suckas</title>
     <script src="/build/react.js"></script>
-    <script src="/build/JSXTransformer.js"></script>
+    <!--
+       -JSXTransformer is only necessary if your build files aren't compiled into regular JS:
+       -<script src="/build/JSXTransformer.js"></script>
+       -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <style type="text/css">
+      input { display: block; margin: 0 0 1em; }
+    </style>
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/jsx" src="/build/helloworld.js"></script>
+    <hr>
+    <div id="content"></div>
+    <script src="/build/helloworld.js"></script>
   </body>
 </html>

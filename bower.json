@@ -1,0 +1,17 @@
+{
+  "name": "react-0.13.3",
+  "version": "0.0.0",
+  "authors": [
+    "matyus <michael@maty.us>"
+  ],
+  "main": "server.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
